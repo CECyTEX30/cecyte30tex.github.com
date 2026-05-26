@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cecyte 30</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f7a3a,#00c853,#b9f6ca);
+    padding:30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* CONTENEDOR  */
+.container{
+    width:95%;
+    max-width:500px;
+    background:#ffffff;
+    border-radius:25px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.3);
+    padding:20px;
+}
+
+/* LA CABECERA */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.logo img{
+    height:50px;
+}
+
+/* CUADRO PRINCIPAL */
+.hero{
+    position:relative;
+    border-radius:20px;
+    overflow:hidden;
+    height:400px;
+    display:flex;
+    align-items:center;
+    padding:40px;
+    color:white;
+}
+
+/* IMAGEN DE FONDO */
+.hero::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:url("imagenes/bandera.jpeg") center/cover no-repeat;
+    top:0;
+    left:0;
+    z-index:0;
+}
+
+/* CAPA */
+.hero::after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(90deg,rgba(0,0,0,0.6),rgba(0,0,0,0.1));
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+/* CONTENIDO */
+.content{
+    position:relative;
+    z-index:2;
+    max-width:400px;
+}
+
+.content h1{
+    font-size:2.5rem;
+}
+
+.content h2{
+    margin:10px 0;
+}
+
+/* TARJETA INFO */
+.info-card{
+    margin-top:20px;
+    display:flex;
+    gap:15px;
+}
+
+.info-item{
+    background:white;
+    color:#0f7a3a;
+    padding:12px 15px;
+    border-radius:10px;
+    font-weight:bold;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* RESPONSIVA */
+@media(max-width:768px){
+    .hero{
+        height:auto;
+        padding:20px;
+    }
+
+    .info-card{
+        flex-direction:column;
+    }
+
+    .content h1{
+        font-size:1.8rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- CABECERA -->
+    <div class="header">
+        <div class="logo">
+            <!-- LOGO -->
+            <img src="imagenes/LOGO Cecyte.png" alt="logo">
+        </div>
+    </div>
+
+    <!-- TARJETA PRINCIPAL -->
+    <div class="hero">
+
+        <div class="content">
+           <Em><h1>Cecyte 30 Texmolac</h1>
+            <h2>Liderazgo y compromiso</h2>
+            <p>"Página informativa CECyTE"</p></EM>
+
+            <div class="info-card">
+                <div class="info-item">Correo: cecyte30@cecytlax.edu.mx</div>
+                <div class="info-item">Clave: 29ETC0030F</div>
+            </div>
+        </div>
+
+    </div>
+ 
+<style>
+.section2{
+    margin-top:40px;
+}
+
+.box{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.btn{
+    flex:1;
+    padding:15px;
+    text-align:center;
+    background:linear-gradient(135deg,#00c853,#69f0ae);
+    color:white;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.map{
+    width:100%;
+    height:300px;
+    border-radius:20px;
+    overflow:hidden;
+    background:#fbfcfb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+</style>
+
+<div class="section2">
+    <div class="box">
+
+        <div class="buttons">
+            <a href="paginas/video.html" class="btn"> <em>Video presentacion </em> </a>
+           <a href="paginas/especialidades.html" class="btn">  <em>Especialidades</em> </a>
+        </div>
+
+        <h2 style="text-align:center; margin-bottom:15px;"> <strong>Mapa escuela</strong></h2>
+
+        <div class="map">
+        
+            <!-- OPCIÓN MAPA -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.270824278451!2d-98.04807642563405!3d19.42072408185613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d01dd8b726380d%3A0x28f1d54da3f6af0f!2sCECYTE%2030%20Guadalupe%20Texmolac!5e1!3m2!1ses-419!2smx!4v1779502229612!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        </div>
+<!-- ===== SECCIÓN DIRECTOR ===== -->
+
+<style>
+.director-section{
+    margin-top:40px;
+}
+
+.director-box{
+    background:white;
+    
+    padding:40px;
+   
+    text-align:center;
+}
+
+
+/* TÍTULO */
+.director-title{
+    font-size:3rem;
+    color:#0f7a3a;
+    margin-bottom:25px;
+}
+
+/* FOTO DIRECTOR */
+.director-img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* NOMBRE */
+.director-name{
+    margin-top:20px;
+    font-size:2rem;
+    color:#222;
+    font-weight:bold;
+}
+
+/* ESTUDIANTES */
+.students-title{
+    margin-top:50px;
+    font-size:3rem;
+    color:#0f7a3a;
+}
+.students-content{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+/* NÚMERO */
+.number{
+    font-size:6rem;
+    font-weight:bold;
+    color:#111;
+}
+
+/* FOTO */
+.student-img{
+    width:170px;
+    height:170px;
+    object-fit:cover;
+    border-radius:20px;
+    background:#eee;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* TEXTO */
+.student-text{
+    max-width:300px;
+    background:#f1fff4;
+    padding:20px;
+    border-radius:15px;
+    color:#333;
+    line-height:1.7;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .director-title,
+    .students-title{
+        font-size:2rem;
+    }
+
+    .director-name{
+        font-size:1.5rem;
+    }
+
+    .number{
+        font-size:4rem;
+    }
+
+    .students-content{
+        flex-direction:column;
+    }
+}
+</style>
+
+<div class="director-section">
+
+    <div class="director-box">
+
+        <!-- DIRECTOR -->
+        <h1 class="director-title">Director</h1>
+
+        <!-- CAMBIAR FOTO -->
+        <img src="imagenes/director salvador.jpeg" alt="director" class="director-img">
+
+        <div class="director-name">
+            Salvador Del Angel Pérez
+        </div>
+        
+        <!-- ESTUDIANTES -->
+        <h2 class="students-title">
+            Número de estudiantes
+        </h2>
+
+        <div class="students-content">
+
+            <div class="number">
+                546
+            </div>
+
+            <!-- CAMBIAR FOTO -->
+            <img src="imagenes/grupo fut.jpeg" alt="foto" class="student-img">
+
+            <div class="student-text">
+               <Em> Comunidad estudiantil activa, comprometida al deporte y actividades extracurriculares</Em>
+            </div>
+
+        </div>
+<!-- ===== SECCIÓN PROFESORES E INSTALACIONES ===== -->
+
+<style>
+.school-section{
+    margin-top:40px;
+}
+
+.school-box{
+    background:white;
+    
+    padding:40px;
+    
+}
+
+/* TÍTULOS */
+.section-header{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    margin-bottom:35px;
+}
+
+.section-title{
+    background:linear-gradient(135deg,#0f7a3a,#00c853);
+    color:white;
+    text-align:center;
+    padding:18px;
+    border-radius:18px;
+    font-size:2rem;
+    font-weight:bold;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* CONTENIDO */
+.section-content{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+}
+
+/* COLUMNAS */
+.column{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+/* TARJETAS */
+.card{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    background:#f7fff8;
+    padding:18px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* IMAGEN */
+.card img{
+    width:220px;
+    height:150px;
+    object-fit:cover;
+    border-radius:15px;
+    background:#ddd;
+}
+
+
+/* TEXTO */
+.card-text{
+    color:#333;
+    line-height:1.7;
+    font-size:1rem;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+    .section-header,
+    .section-content{
+        grid-template-columns:1fr;
+    }
+
+    .card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .card img{
+        width:100%;
+        height:200px;
+    }
+
+    .section-title{
+        font-size:1.6rem;
+    }
+}
+
+</style>
+
+<div class="school-section">
+
+    <div class="school-box">
+
+        <!-- TÍTULOS -->
+        <div class="section-header">
+
+           <a href="paginas/profes.html" class="btn"> <em>PROFESORES</em> </a>
+
+            <a href="paginas/instalaciones.html" class="btn"> <em>INSTALACIONES</em> </a>
+
+        </div>
+
+
+        <!-- CONTENIDO -->
+        <div class="section-content">
+
+             <!-- LOGROS -->
+            <div class="column">
+
+                <div class="card">
+
+                    <!-- CAMBIAR FOTO -->
+                    <img src="imagenes/trofeo 1.jpeg" alt="trofeos">
+
+                    <div class="card-text">
+                   <Em> El CECyTE 30 de Texmolac a conseguido algunos trofeos de la rama de futbol</Em> 
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <!-- CAMBIAR FOTO -->
+                    <img src="imagenes/reconocimiento 2.jpeg" alt="reconocimiento">
+
+                    <div class="card-text">
+                        <Em>Reconocimientos por la participacion en encuentros estatales de interculturalidad</Em>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- LOGROS -->
+            <div class="column">
+
+                <div class="card">
+
+                    <!-- CAMBIAR FOTO -->
+                    <img src="imagenes/trofeo 2.jpeg" alt="trofeos">
+
+                    <div class="card-text">
+                     <Em> 1er lugar estatal en la rama de voleibol varonil</Em>
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <!-- CAMBIAR FOTO -->
+                    <img src="imagenes/reconocimiento 3.jpeg" alt="logros">
+
+                    <div class="card-text">
+                      <Em> Reconocimiento en olimpiadas deciencia y tecnologia</Em>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+<!-- ===== SECCIÓN MASCOTA ESCOLAR ===== -->
+
+<style>
+.pet-section{
+    margin-top:40px;
+}
+
+.pet-box{
+    background:#ffffff;
+    
+    padding:50px 40px;
+    
+    position:relative;
+    
+   
+    text-align:center;
+}
+
+/* DETALLES */
+.pet-box::before,
+.pet-box::after{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    
+    border-radius:25px;
+    opacity:0.3;
+}
+
+.pet-box::before{
+    top:-60px;
+    left:-60px;
+}
+
+.pet-box::after{
+    bottom:-60px;
+    right:-60px;
+}
+
+
+/* TÍTULO */
+.pet-title{
+    font-size:4rem;
+    color:#0f7a3a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom:40px;
+    font-weight:bold;
+}
+
+/* FOTO */
+.pet-img{
+    width:170px;
+    height:170px;
+    object-fit:cover;
+    border-radius:20px;
+    background:#eee;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    
+}
+
+
+/* TEXTO */
+.pet-text{
+    
+    padding:25px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+   
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .pet-title{
+        font-size:2.3rem;
+    }
+
+    .pet-img{
+        height:280px;
+    }
+}
+</style>
+
+<div class="pet-section">
+
+    <div class="pet-box">
+
+        <!-- TÍTULO -->
+        <h1 class="pet-title">
+            Mascota Escolar
+        </h1>
+
+        <!-- CAMBIAR FOTO -->
+        <img src="imagenes/Peluchin.jpeg" alt="mascota" class="pet-img">
+
+        <!-- TEXTO -->
+        <div class="pet-text">
+           <Em> Peluchin es la mascota de el CECyTE 30 y forma parte de nuestra comunidad estudiantil.</Em>
+        </div>
+
+    </div>
+
+<!-- ===== SECCIÓN VISIÓN Y MISIÓN ===== -->
+
+<style>
+.vm-section{
+    margin-top:40px;
+}
+
+.vm-box{
+    background:#ffffff;
+    
+    padding:50px;
+  
+}
+
+/* TÍTULO */
+.vm-title{
+     font-size:4rem;
+    color:#0f7a3a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom:40px;
+    font-weight:bold;
+}
+
+/* CONTENIDO */
+.vm-content{
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+/* TARJETAS */
+.vm-card{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    align-items:center;
+    background:#f7fff8;
+    padding:18px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.vm-card:hover{
+    transform:translateY(-6px);
+}
+
+/* SUBTÍTULO */
+.vm-subtitle{
+    text-align:center;
+    font-size:2.5rem;
+    color:#0f7a3a;
+    margin-bottom:25px;
+}
+
+/* IMAGEN */
+.vm-card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:20px;
+    margin-bottom:25px;
+    display: block;
+    height:250px;
+    object-fit:contain;
+    margin:0 auto;
+    justify-content: center;
+    align-items:center;
+}
+
+/* TEXTO */
+.vm-text{
+    max-width:300px;
+    background:#f1fff4;
+    padding:20px;
+    border-radius:15px;
+    color:#333;
+    line-height:1.7;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+    .vm-content{
+        grid-template-columns:1fr;
+    }
+
+    .vm-title{
+        font-size:2.5rem;
+    }
+
+    .vm-subtitle{
+        font-size:2rem;
+    }
+
+    .vm-card img{
+        height:220px;
+    }
+}
+</style>
+
+<div class="vm-section">
+
+    <div class="vm-box">
+
+        <!-- TÍTULO -->
+        <h1 class="vm-title">
+            VISIÓN | MISIÓN
+        </h1>
+
+        <div class="vm-content">
+
+            <!-- VISIÓN -->
+            <div class="vm-card">
+                <!-- CAMBIAR FOTO -->
+                <img src="imagenes/vision.jpg" alt="visión">
+
+                <!-- TEXTO -->
+                <div class="vm-text">
+                  <Em><p>Ser la Institución Educativa líder del nivel medio superior con mayor reconocimiento por la pertinencia de su oferta educativa, calidad académica, vinculación con el sector productivo e impulso a la innovación tecnológica y emprendimiento.</p> </Em> 
+
+ 
+                </div>
+
+            </div>
+
+            <!-- MISIÓN -->
+            <div class="vm-card">
+                <!-- CAMBIAR FOTO -->
+                <img src="imagenes/mision.jpg" alt="misión">
+
+                <!-- TEXTO -->
+                <div class="vm-text">
+                  <EM> Formar egresados de nivel medio superior con visión humanista y competencias científicas, tecnológicas, de innovación y emprendimiento para su incorporación a la universidad o a la actividad productiva</EM>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </div>
+
+<!-- ===== SECCIÓN TÍTULO TÉCNICO ===== -->
+
+<style>
+.tt-section{
+    margin-top:40px;
+}
+
+.tt-box{
+    background:#ffffff;
+   
+    padding:50px;
+   
+}
+
+/* TÍTULO */
+.tt-title{
+      font-size:4rem;
+    color:#0f7a3a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom:40px;
+    font-weight:bold;
+}
+
+
+
+
+
+
+.tt-card:hover{
+    transform:translateY(-6px);
+}
+
+
+
+
+/* TEXTO FINAL */
+.tt-description{
+   
+   padding:25px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+    .tt-images{
+        grid-template-columns:1fr;
+    }
+
+    .tt-title{
+        font-size:2.5rem;
+    }
+
+    .tt-card img{
+        height:250px;
+    }
+}
+</style>
+
+<div class="tt-section">
+
+    <div class="tt-box">
+
+        <!-- TÍTULO -->
+        <h1 class="tt-title">
+            Título Técnico
+        </h1>
+
+    
+
+
+        </div>
+
+        <!-- TEXTO -->
+        <div class="tt-description">
+
+            <h2> Proceso de Titulación y Cédula Profesional</h2> <br>
+ <em>Al concluir sus estudios, los alumnos presentan sus Proyectos de Titulación, los cuales son evaluados para obtener el grado de Técnico en la especialidad cursada 
+
+Una vez validado el proyecto y finalizado el programa educativo, los egresados reciben su título de técnico y la cédula profesional correspondiente, lo que formaliza su preparación para el mercado laboral o estudios superiores 
+
+Este proceso garantiza que los graduados cuenten con reconocimiento oficial para desempeñarse profesionalmente en su área de formación.</p></em>
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

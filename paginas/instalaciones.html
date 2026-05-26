@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instalaciones - Cecyte 30</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f7a3a,#00c853,#a4e4b6);
+    min-height:100vh;
+    padding:30px;
+}
+
+/* CONTENEDOR */
+.container{
+    max-width:1200px;
+    margin:auto;
+    background:white;
+    border-radius:30px;
+    padding:50px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.3);
+}
+
+/* BOTÓN */
+.back-btn{
+    position:absolute;
+    top:30px;
+    right:30px;
+    background:#0f7a3a;
+    color:white;
+    padding:10px 18px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:#00c853;
+}
+
+/* TÍTULO */
+.title{
+    text-align:center;
+    font-size:4rem;
+    color:#0f7a3a;
+    margin-bottom:40px;
+}
+
+/* VIDEO */
+.video-box{
+    background:#f7fff8;
+    padding:30px;
+    border-radius:25px;
+    margin-bottom:50px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.video-box h2{
+    text-align:center;
+    color:#0f7a3a;
+    margin-bottom:25px;
+    font-size:2rem;
+}
+
+video{
+    width:100%;
+    border-radius:20px;
+    background:#000;
+}
+
+/* GALERÍA */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+/* TARJETAS */
+.card{
+    background:#f7fff8;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+/* FOTO */
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+/* TEXTO */
+.card-content{
+    padding:25px;
+}
+
+.card-content h3{
+    color:#0f7a3a;
+    margin-bottom:15px;
+    font-size:1.6rem;
+}
+
+.card-content p{
+    color:#444;
+    line-height:1.8;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .title{
+        font-size:2.5rem;
+    }
+
+    .container{
+        padding:25px;
+    }
+
+    .back-btn{
+        position:static;
+        display:inline-block;
+        margin-bottom:25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- BOTÓN -->
+    <a href="../index.html" class="back-btn">
+        ⬅ Inicio
+    </a>
+
+    <!-- TÍTULO -->
+    <h1 class="title">
+        Instalaciones
+    </h1>
+
+    <!-- VIDEO -->
+    <div class="video-box">
+
+        <h2>
+            Video de Instalaciones
+        </h2>
+
+        <!-- CAMBIAR VIDEO -->
+        <video controls>
+            <source src="../videos/video niñ.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+    <!-- GALERÍA -->
+    <div class="gallery">
+
+        <!-- FOTO 1 -->
+        <div class="card">
+
+            <!-- CAMBIAR FOTO -->
+            <img src="../imagenes/fachada.jpeg" alt="instalación">
+
+            <div class="card-content">
+
+                <h3>
+                   Fachada Escolar
+                </h3>
+
+                <p>
+                    
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- FOTO 2 -->
+        <div class="card">
+
+            <!-- CAMBIAR FOTO -->
+            <img src="../imagenes/bebedero.jpeg" alt="instalación">
+
+            <div class="card-content">
+
+                <h3>
+                    bebedero
+                </h3>
+
+                <p>
+              la escuela cuenta con bebederos para toda la comunidad estudintil.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- FOTO 3 -->
+        <div class="card">
+
+            <!-- CAMBIAR FOTO -->
+            <img src="../imagenes/reciclaje.jpeg" alt="instalación">
+
+            <div class="card-content">
+
+                <h3>
+                   Reciclaje de tapitas de botellas
+                </h3>
+
+                <p>
+                    Se trata de juntar y reciclar las tapitas de botellas.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+<!-- FOTO 4 -->
+<div class="card">
+
+    <img src="../imagenes/salon.jpeg" alt="instalación">
+
+    <div class="card-content">
+
+        <h3>Salon </h3>
+
+        <p>
+            Se cuenta con salones limpios y ordenados.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- FOTO 5 -->
+<div class="card">
+
+    <img src="../imagenes/botellas.jpeg" alt="instalación">
+
+    <div class="card-content">
+
+        <h3>Contenedor de botellas</h3>
+
+        <p>
+            Se juntan botellas para la reciclacion de las mismas.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- FOTO 6 -->
+<div class="card">
+
+    <img src="../imagenes/quimica.jpeg" alt="instalación">
+
+    <div class="card-content">
+
+        <h3>Laboratorio</h3>
+
+        <p>
+           El CECyTE cuenta con laboratorio con telescopio y instalaciones en optimas condiciones.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- FOTO 7 -->
+<div class="card">
+
+    <img src="../imagenes/meca.jpeg" alt="instalación">
+
+    <div class="card-content">
+
+        <h3>Taller de mecatronica</h3>
+
+        <p>
+           Los alumnos de mecratronica cuentan con computadoras en optimas condiciones.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- FOTO 8 -->
+<div class="card">
+
+    <img src="../imagenes/casa peluchin.jpeg" alt="instalación">
+
+    <div class="card-content">
+
+        <h3>Casa de peluchin</h3>
+
+        <p>
+           Peluchin cuenta con su casita para cubrirse del frio.
+        </p>
+
+    </div>
+
+</div>
+</div>
+
+</body>
+</html>

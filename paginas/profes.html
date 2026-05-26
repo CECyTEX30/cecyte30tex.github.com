@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profesores</title>
+
+<style>
+.teachers-section{
+    margin-top:40px;
+}
+
+.teachers-box{
+    background:white;
+    border-radius:25px;
+    padding:40px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* TÍTULO */
+.teachers-title{
+    text-align:center;
+    font-size:3rem;
+    color:#0f7a3a;
+    margin-bottom:40px;
+}
+
+/* GRID */
+.teachers-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+/* targeta */
+.teacher-card{
+    background:#f7fff8;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.teacher-card:hover{
+    transform:translateY(-6px);
+}
+
+/* FOTO */
+.teacher-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    border-radius:18px;
+    margin-bottom:15px;
+    background:#ddd;
+}
+
+/* NOMBRE */
+.teacher-name{
+    font-size:1.3rem;
+    font-weight:bold;
+    color:#111;
+    margin-bottom:8px;
+}
+
+/* TEXTO */
+.teacher-info{
+    color:#444;
+    line-height:1.6;
+    font-size:0.95rem;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .teachers-title{
+        font-size:2rem;
+    }
+
+    .teacher-card img{
+        height:200px;
+    }
+}
+</style>
+
+<div class="teachers-section">
+
+    <div class="teachers-box">
+
+        <h1 class="teachers-title">
+            Profesores
+        </h1>
+
+<a href="../index.html" class="back-btn">
+            ⬅ Inicio
+        </a>
+        
+        <div class="teachers-grid">
+
+            <!-- PROFESOR 1 -->
+            <div class="teacher-card">
+                <img src="../imagenes/director salvador.jpeg" alt="profesor">
+                <div class="teacher-name">Salvador del Angel Perez</div>
+                <div class="teacher-info">
+                    Ing. Industrial
+                </div>
+            </div>
+
+            <!-- PROFESOR 2 -->
+            <div class="teacher-card">
+                <img src="../imagenes/Cecilia.jpeg" alt="profesor">
+                <div class="teacher-name">Cecilia Maria Rodriguez Granillo</div>
+                <div class="teacher-info">
+                    lic. ciencias de la comunicacion 
+                </div>
+            </div>
+
+            <!-- PROFESOR 3 -->
+            <div class="teacher-card">
+                <img src="../imagenes/jesus.jpeg" alt="profesor">
+                <div class="teacher-name">Jesus Lima Lopez</div>
+                <div class="teacher-info">
+                    Ing. Industrial
+                </div>
+            </div>
+
+            <!-- PROFESOR 4 -->
+            <div class="teacher-card">
+                <img src="../imagenes/Joseluis.jpeg" alt="profesor">
+                <div class="teacher-name">Jose Luis Martinez Romero</div>
+                <div class="teacher-info">
+                    Ing. Sistemas Computacionales
+                </div>
+            </div>
+
+            <!-- PROFESOR 5 -->
+            <div class="teacher-card">
+                <img src="../imagenes/Miriam.jpeg" alt="profesor">
+                <div class="teacher-name">Miriam Claudia Flores Flores</div>
+                <div class="teacher-info">
+                   Lic. Ciencias de la educacion 
+                </div>
+            </div>
+
+            <!-- PROFESOR 6 -->
+            <div class="teacher-card">
+                <img src="../imagenes/ovando.jpeg" alt="profesor">
+                <div class="teacher-name">Misael Ovando Romero</div>
+                <div class="teacher-info">
+                   lic. Telebachillerato
+                </div>
+            </div>
+
+            <!-- PROFESOR 7 -->
+            <div class="teacher-card">
+                <img src="../imagenes/yuliana.jpeg" alt="profesor">
+                <div class="teacher-name">Yuliana Montiel Corona</div>
+                <div class="teacher-info">
+                   Lic. Matematicas aplicadas
+                </div>
+            </div>
+
+            <!-- PROFESOR 8 -->
+            <div class="teacher-card">
+                <img src="../imagenes/Robert.jpeg" alt="profesor">
+                <div class="teacher-name">Roberto</div>
+                <div class="teacher-info">
+                    Lic.derecho, sociologia y trabajo social.
+                </div>
+            </div>
+
+            <!-- PROFESOR 9 -->
+            <div class="teacher-card">
+                <img src="../imagenes/nerit.jpeg" alt="profesor">
+                <div class="teacher-name">Nerit Montiel Martinez</div>
+                <div class="teacher-info">
+                    Ciencias biologicas
+                </div>
+            </div>
+
+            <!-- PROFESOR 10 -->
+            <div class="teacher-card">
+                <img src="../imagenes/brenda.jpeg" alt="profesor">
+                <div class="teacher-name">Brenda Juarez Vazquez</div>
+                <div class="teacher-info">
+                 Ing. Tics 
+                </div>
+            </div>
+
+            <!-- PROFESOR 11 -->
+            <div class="teacher-card">
+                <img src="../imagenes/martha.jpeg" alt="profesor">
+                <div class="teacher-name">Martha Laura Cruz Hernandez</div>
+                <div class="teacher-info">
+                licenciatura en informatica
+                </div>
+            </div>
+
+            <!-- PROFESOR 12 -->
+            <div class="teacher-card">
+                <img src="../imagenes/Isabel.jpeg" alt="profesor">
+                <div class="teacher-name">Isabel</div>
+                <div class="teacher-info">
+                  Ciencias de la educacion 
+                </div>
+            </div>
+
+            <!-- PROFESOR 13 -->
+            <div class="teacher-card">
+                <img src="../imagenes/mele.jpeg" alt="profesor">
+                <div class="teacher-name">Melesio</div>
+                <div class="teacher-info">
+                  Seguridad privada
+                </div>
+            </div>
+
+            <!-- PROFESOR 14 -->
+            <div class="teacher-card">
+                <img src="../imagenes/conchita.jpeg" alt="profesor">
+                <div class="teacher-name">Concepcion Sanchez Flores</div>
+                <div class="teacher-info">
+                    Ing. en gestion empresarial
+                </div>
+            </div>
+
+            <!-- PROFESOR 15 -->
+            <div class="teacher-card">
+                <img src="../imagenes/german.jpeg" alt="profesor">
+                <div class="teacher-name">German Vargas albañil</div>
+                <div class="teacher-info">
+                   Lic. educacion especial de Ingles
+                </div>
+            </div>
+
+            <!-- PROFESOR 16 -->
+             <div class="teacher-card">
+                <img src="../imagenes/patricia.jpeg" alt="profesor">
+                <div class="teacher-name">Patricia Becerra Castillo</div>
+                <div class="teacher-info">
+                     Médico veterinario Zootecnista
+                </div>
+            </div>
+
+            <!-- PROFESOR 17 -->
+            <div class="teacher-card">
+                <img src="../imagenes/leticia.jpeg" alt="profesor">
+                <div class="teacher-name">Leticia</div>
+                <div class="teacher-info">
+                    Lic. en linguistica aplicada
+                </div>
+            </div>
+             <!-- PROFESOR 18 -->
+            <div class="teacher-card">
+                <img src="../imagenes/palestina.jpeg" alt="profesor">
+                <div class="teacher-name">Agustín Palestina Durán</div>
+                <div class="teacher-info">
+                Ingeniería electromecánica
+                </div>
+            </div>
+            <!-- PROFESOR 19 -->
+            <div class="teacher-card">
+                <img src="../imagenes/claudi.jpeg" alt="profesor">
+                <div class="teacher-name"> Claudi Carmina 
+                <div class="teacher-info">
+                   Ingeniería bioquímica
+                </div>
+            </div>
+            </div>
+               <!-- PROFESOR 16 -->
+             <div class="teacher-card">
+                <img src="../imagenes/acundo.jpeg" alt="profesor">
+                <div class="teacher-name">Facundo Cabrera Fernandez</div>
+                <div class="teacher-info">
+                     Seguridad Privada
+                </div>
+            </div>
+           
+
+
+
+           

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Especialidades</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f7a3a,#00c853,#a4e4b6);
+    padding:30px;
+    min-height:100vh;
+}
+
+/* CONTENEDOR */
+.container{
+    max-width:1200px;
+    margin:auto;
+    background:white;
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.3);
+}
+
+/* SUPERIOR */
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.title{
+    color:#0f7a3a;
+    font-size:3rem;
+    font-weight:bold;
+}
+
+/* BOTÓN */
+.back-btn{
+    padding:10px 18px;
+    background:linear-gradient(135deg,#00c853,#69f0ae);
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:bold;
+    transition:0.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.back-btn:hover{
+    transform:scale(1.05);
+}
+
+/* TARJETAS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#f7fff8;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* TITULO CARD */
+.card h2{
+    color:#0f7a3a;
+    text-align:center;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+/* CONTENIDO */
+.content{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+/* IMAGEN */
+.content img{
+    width:170px;
+    height:170px;
+    object-fit:cover;
+    border-radius:15px;
+    background:#ddd;
+}
+
+/* TEXTO */
+.text{
+    color:#333;
+    line-height:1.4;
+}
+
+/* RECUADRO */
+@media(max-width:768px){
+
+    .top{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .title{
+        font-size:2rem;
+        text-align:center;
+    }
+
+    .content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .content img{
+        width:100%;
+        max-width:220px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SUPERIOR -->
+    <div class="top">
+
+        <h1 class="title">Especialidades</h1>
+
+        <a href="../index.html" class="back-btn">
+            ⬅ Inicio
+        </a>
+
+    </div>
+
+    <!-- TARJETAS -->
+    <div class="cards">
+
+        <!-- CARD 1 -->
+        <div class="card">
+
+            <h2>Programación</h2>
+
+            <div class="content">
+
+                <!--  FOTO -->
+                <img src="../imagenes/programacion.jpeg" alt="programación">
+                <div class="text">
+                    En esta especialidad podras aprender a utilizar algoritmos , diagramas de flujo asi como aprender a desarrollar sofware y descubrir lenguajes de programacion 
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- TAREGTA 2 -->
+        <div class="card">
+
+            <h2>Mecatrónica</h2>
+
+            <div class="content">
+
+                <!-- CAMBIAR FOTO -->
+                <img src="../imagenes/mecatronica.jpeg" alt="mecatrónica">
+
+                <div class="text">
+                    Aqui podras conocer los circuitos basicos y electricidad al igual que mantenimiento a sistemas mecatronicos y verificar el funcionamiento de sensores y mecanismos.
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+
+            <h2>Animacion Digital</h2>
+
+            <div class="content">
+
+                <!-- CAMBIAR FOTO -->
+                <img src="../imagenes/animacion.jpeg" alt="diseño">
+
+                <div class="text">
+            Aqui podras aprender a editar fotos , videos y audio mediante sofware avanzado al igual crear diseños digitales y animaciones 2d y 3d tambien podras crear juegos y mundos virtuales.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
